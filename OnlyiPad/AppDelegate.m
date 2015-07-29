@@ -22,7 +22,7 @@
         if (result && !error) {
             NSLog(@"result: %@", result);
         }
-    } apiToken:@"sdsd"];
+    } token:@"sdsd"];
     
     return YES;
 }
