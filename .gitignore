@@ -1,6 +1,7 @@
 # Xcode
 #
 build/
+build_ipa/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
