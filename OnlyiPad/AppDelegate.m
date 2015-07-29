@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <FIR/FIR.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [FIR checkForUpdateInFIR:^(id result, NSError *error) {
+        if (result && !error) {
+            NSLog(@"result: %@", result);
+        }
+    } token:@"sdsd"];
+    
     return YES;
 }
 
